@@ -1,0 +1,310 @@
+body{
+    padding-top: 45px;
+}
+/*cart content*/
+.cart-view{
+    padding-bottom: 58px;
+    min-width: 300px;
+}
+.cart-view .safeTip{
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    text-align: center;
+    line-height: 34px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #686868;
+    font-size: 13px;
+}
+.cart-view .safeTip p{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 25px;
+    color: #686868;
+    position: relative;
+}
+.cart-view .safeTip p::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url("../images/safe_icon.png") no-repeat ;
+    background-size: 18px 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*jd-shop*/
+.jd-shop{
+    min-width: 300px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.jd-shop .jd-shop-name{
+    width: 100%;
+    height: 35px;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.jd-shop .jd-shop-name .shop-check{
+    height: 35px;
+}
+.jd-shop .jd-shop-name .shop-check .jd-check-box{
+    top: 8px;
+}
+/*check-box*/
+.shop-check {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shop-check .jd-check-box{
+    height: 20px;
+    width: 20px;
+    display: block;
+
+    background: url("../images/shop-icon.png") no-repeat;
+    background-size: 50px 100px;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+.shop-check .jd-check-box[checked]{
+    background-position: -25px 0;
+}  
+/*shop-title*/
+.jd-shop .jd-shop-name .shop-title{
+    padding-left: 40px;
+    line-height: 35px;
+}
+.jd-shop .jd-shop-name .shop-title > img{
+    width: 15px;
+    height: 13px;
+    float: left;
+    margin-top: 11px;
+}
+.jd-shop .jd-shop-name .shop-title span:nth-of-type(1){
+    float: left;
+    margin-left: 5px;
+}
+.jd-shop .jd-shop-name .shop-title span:nth-of-type(2){
+    float: right;
+    margin-right: 10px;
+    color:#f15353;
+}
+
+.jd-shop-product ul li{
+    position: relative;
+}
+.jd-shop-product .shop-check{
+    height:80px ;
+}
+.jd-shop-product .shop-check .jd-check-box{
+    top: 20px;
+}
+.jd-shop-product .product-info{
+    width: 100%;
+    position: relative;
+    padding-left: 130px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.jd-shop-product .product-info .img-box{
+    display: block;
+    padding-left: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.jd-shop-product .product-info .img-box img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e0e0e0;
+}
+.jd-shop-product .product-info .info{
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    font-size: 13px;
+}
+.jd-shop-product .product-info .info > .pro-title{
+    height: 35px;
+}
+.jd-shop-product .product-info .info > .pro-title > a{
+    font-size: 13px;
+    color: #333;
+}
+.jd-shop-product .product-info .info .pro-price{
+    display: block;
+    height: 25px;
+    color: #E4393C;
+}
+.jd-shop-product .product-info .info > table tr > td{
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 16px;
+}
+.jd-shop-product .product-info .info > table tr > td:nth-of-type(2){font-size: 13px;}
+.jd-shop-product .product-info .info .deleteBox{
+    width: 20px;
+    height: 23px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+.jd-shop-product .product-info .info > .deleteBox > span:first-child{
+    display: block;
+    width: 20px;
+    height: 5px;
+    background: url("../images/delete_up.png");
+    background-size: 20px 5px;
+    margin-bottom: -3px;
+}
+.jd-shop-product .product-info .info > .deleteBox > span:last-child{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/delete_down.png");
+    background-size: 18px 18px;
+    margin-left: 1px;
+}
+/*option area*/
+.jd-option{
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    z-index: 1020;
+}
+.jd-option .shop-check .jd-check-box{
+    top: 20px;
+}
+.jd-option .allChose{
+    display: block;
+    line-height: 57px;
+    margin-left: 35px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
+    float: left;
+}
+/*allCost*/
+.jd-option > .allCost{
+    float: left;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.jd-option > .allCost > p:first-child > span{
+    font-size: 16px;
+}
+.jd-option > .allCost > p:last-child {
+    font-size: 10px;
+    line-height: 22px;
+    color: #ccc;
+}
+/*pay*/
+.jd-option > .pay{
+    width: 116px;
+    height: 57px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #f15353;
+    text-align: center;
+    z-index:9;
+}
+.jd-option > .pay > a{
+    color: #fff;
+    display: block;
+    line-height: 57px;
+    font-size: 18px;
+}
+.jd-option > .pay > a > span{
+    font-size: 14px;
+}
+
+/*modal*/
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1001;
+}
+.modal > .modal-delete{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 45%;
+}
+.modal > .modal-delete > .delete-title{
+    line-height: 74px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin: 0 20px;
+}
+.modal > .modal-delete > .modal-btn{
+    padding : 10px 20px;
+}
+.modal > .modal-delete > .modal-btn > a{
+    display: block;
+    width: 45%;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    float: left;
+    border-radius: 5px;
+}
+.modal > .modal-delete > .modal-btn .cancel{
+    color: #666;
+    margin-right: 10%;
+}
+.modal > .modal-delete > .modal-btn .submit{
+    color: #fff;
+    background: #f15353;
+}
+
+
+/*模态框滑动的动画*/
+
+@-webkit-keyframes upDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+    }
+    75%{
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+    }
+    90%{
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+    }
+    100%{
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+.upDown{
+    animation: upDown 1s ease;
+}

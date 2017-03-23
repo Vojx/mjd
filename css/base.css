@@ -1,0 +1,183 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+
+    -webkit-box-sizing: border-box;/*以你的border开始计算你的宽度*/
+
+}
+
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;/*第二个是手机的一个默认的字体*/
+    color: #000;
+    background: #f5f5f5;
+    line-height: 1;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;/*清除选中效果*/
+
+    -webkit-appearance: none;/*清除浏览器默认的样式*/
+}
+img{
+    vertical-align: middle;
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.jd-wrapper{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+[class^="icon-"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+
+/*顶部搜索区域*/
+.jd-topbar{
+    height: 45px;
+    width: 100%;
+    background: url("../images/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.jd-topbar .icon-back{
+    width: 20px;
+    height: 20px;
+    background-position: -20px 0;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.jd-topbar h2{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: inherit;
+    line-height: 44px;
+}
+.jd-topbar form{
+    height: 44px;
+    width: 100%;
+    padding: 0 40px;
+}
+.jd-topbar form input{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #bfbfbf;
+    padding-left: 10px;
+    margin-top: 6px;
+    border-radius: 4px;
+}
+.jd-topbar .icon-menu{
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    display: block;
+    background-position: -60px 0;
+    background-origin: content-box;
+    background-clip: content-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*导航栏*/
+
+.jd-header-nav{
+    width: 100%;
+    background-color: #404042;
+    height: 57px;
+    position: relative;
+    z-index: 1000;
+}
+.jd-header-nav .nav-list{
+    width: 100%;
+}
+.jd-header-nav .nav-list > li{
+    width: 25%;
+    float: left;
+}
+.jd-header-nav .nav-list > li.cur a{
+    background-color: #2D2D2D;
+}
+.jd-header-nav .nav-list > li > a{
+    display: block;
+    width: 100%;
+    height: 57px;
+    color: #eee;
+    text-align: center;
+    padding-top: 6px;
+}
+.jd-header-nav .nav-list > li > a > span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+    color: #eee;
+}
+.jd-header-nav .nav-list > li > a > strong{
+    display: block;
+    height: 17px;
+    font-weight: lighter;
+    font-size: 13px;
+    padding-top: 3px;
+}
+.jd-header-nav .nav-list > li > a > span.first-page{
+    background-position: -30px -27px;
+}
+.jd-header-nav .nav-list > li > a > span.category{
+    background-position: -60px -27px;
+}
+.jd-header-nav .nav-list > li > a > span.cart{
+    background-position: -90px -27px;
+}
+.jd-header-nav .nav-list > li > a > span.mine{
+    background-position: -120px -27px;
+}
+

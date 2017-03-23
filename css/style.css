@@ -1,0 +1,321 @@
+/*jd-wrapper*/
+.jd-wrapper{
+    min-width: 300px;
+    max-width: 640px;
+    margin:0 auto;
+    position: relative;
+}
+/*header*/
+.jd-header{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/*topbar*/
+.jd-header .jd-topbar{
+    height: 40px;
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(201,21,35,0);
+    border-bottom: none;
+}
+
+.jd-header .jd-topbar .icon-logo{
+    display: block;
+    width: 60px;
+    height: 36px;
+    background-position: 0 -104px;
+    position: absolute;
+    left:10px;
+    top: 4px;
+}
+.jd-header .jd-topbar form{
+    width: 100%;
+    height: 40px;
+    padding-left: 80px;
+    padding-right: 50px;
+    position: relative;
+}
+.jd-header .jd-topbar form input{
+    height: 30px;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 30px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+.jd-header .jd-topbar form .icon-search{
+    width: 20px;
+    height: 20px;
+    background-position:-60px -109px;
+    position: absolute;
+    top: 11px;
+    left: 89px;
+}
+.jd-header .jd-topbar .login{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+
+/*carousel*/
+.jd-banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd-banner ul:first-child{
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+.jd-banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.jd-banner ul:first-child li img{
+    width: 100%;
+    display: block;
+}
+
+/*point*/
+
+.jd-banner ul:last-child{
+    height: 6px;
+    width: 118px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -59px;
+}
+.jd-banner ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #eee;
+    background: transparent;
+    border-radius: 3px;
+    margin-right: 10px;
+    float: left;
+}
+.jd-banner ul:last-child li:last-child{
+    margin-right: 0;
+}
+.jd-banner ul:last-child li.cur{
+    background: #fff;
+}
+
+/*nav*/
+
+.jd-nav{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    /*3.125?*/
+    padding: 0 3.125%;
+    padding-top: 11px;
+}
+.jd-nav ul{
+    width: 100%;
+}
+.jd-nav ul li{
+    float: left;
+    width: 25%;
+    height: 69px;
+}
+.jd-nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+.jd-nav ul li a img{
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.jd-nav ul li a p{
+    line-height: 26px;
+    color: #666;
+    font-size: 12px;
+}
+
+/*main */
+
+/*common style*/
+
+.jd-products{
+    margin: 0 5px;
+}
+.jd-products .jd-products-box{
+    margin-top: 8px;
+    border-bottom: 1px solid #c0c0c0;
+    box-shadow: 0 0 2px 1px #c0c0c0;
+}
+.jd-products .jd-products-box .products-top{
+    height: 32px;
+    background-color: #fff;
+    border-bottom: 1px solid #c0c0c0;
+}
+.jd-products .jd-products-box .products-top.no-bd{
+    border-bottom: none;
+}
+.f-bor{
+    border-left: 1px solid #c0c0c0;
+}
+.r-bor{
+    border-right: 1px solid #c0c0c0;
+}
+.b-bor{
+    border-bottom: 1px solid #c0c0c0;
+}
+/*common style over*/
+
+/*secondKill*/
+.jd-products .secondKill .products-top .sk-title{
+    font-size: 16px;
+    color: #D8505C;
+    padding-left: 30px;
+    padding-right: 10px;
+    float: left;
+    line-height: 32px;
+    position: relative;
+    font-weight: lighter;
+}
+.jd-products .secondKill .products-top .sk-title::before{
+    content: '';
+    background: url("../images/seckill-icon.png") no-repeat 0 0;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    background-size: 16px 20px;
+}
+.jd-products .secondKill .products-top span{
+    margin-top: 5px;
+    display: block;
+    margin-right: 3px;
+    height: 18px;
+    float: left;
+    text-align: center;
+    line-height: 18px;
+}
+.jd-products .secondKill .products-top span.number{
+    width: 16px;
+    background: #333;
+    color: #eee;
+}
+
+.jd-products .secondKill .products-top .more{
+    float: right;
+    padding-right: 10px;
+    line-height: 32px;
+}
+.jd-products .secondKill .sk-content{
+    background: #fff;
+    padding: 10px 0;
+}
+.jd-products .secondKill .sk-content ul{
+    width: 100%;
+}
+.jd-products .secondKill .sk-content li{
+    width: 33.3%;
+    float: left;
+}
+.jd-products .secondKill .sk-content li:last-child .img-box{
+    border-right:none;
+
+}
+.jd-products .secondKill .sk-content .img-box{
+    width: 100%;
+    border-right: 1px solid #c0c0c0;
+}
+.jd-products .secondKill .sk-content .img-box img{
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+.jd-products .secondKill .sk-content .new-price{
+    margin-top: 6px;
+    font-size: 12px;
+    color: #d8505c;
+    text-align: center;
+}
+.jd-products .secondKill .sk-content .old-price{
+    font-size: 12px;
+    text-align: center;
+    text-decoration: line-through;
+    color: #999;
+    line-height: 18px;
+}
+
+/*crazy*/
+.jd-products .jd-pd .crazy,
+.jd-products .jd-pd .crazy img{
+    width: 100%;
+}
+/*chaozhigou remenhuodong*/
+.jd-products .jd-pd .products-top .title{
+    line-height: 32px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #444;
+    position: relative;
+    font-weight: lighter;
+}
+.jd-products .jd-pd .products-top .title::before{
+    content: '';
+    width: 3px;
+    height: 13px;
+    background: #D8505C;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+.jd-products .jd-pd,
+.jd-products .jd-pd table,
+.jd-products .jd-pd table tr,
+.jd-products .jd-pd table tr td img{
+    width: 100%;
+}
+.jd-products .jd-pd table tr td{
+    width: 50%;
+}
+
+
+/*footer-nav*/
+.footer-nav{
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-nav > a{
+    display: block;
+    width: 20%;
+    height: 44px;
+    float: left;
+}
+.footer-nav > a > img{
+    display: block;
+    width: 57px;
+    height: 44px;
+    margin: 0 auto;
+}
